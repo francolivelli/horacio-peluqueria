@@ -1,0 +1,197 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 24px;
+  width: 100%;
+  height: fit-content;
+  background: var(--color-white);
+  border: 1px solid var(--color-grey2);
+  border-radius: 12px;
+}
+
+.list__field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 33%;
+}
+
+.list__label {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--color-grey8);
+}
+
+.list__content {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.list__content--edit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 30px;
+  font-weight: 400;
+}
+
+.list__daysList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+.list__input {
+  height: 30px;
+  width: 80%;
+  color: var(--color-black);
+  padding: 0 8px;
+}
+
+.list__inputSmall {
+  height: 30px;
+  width: 50%;
+  color: var(--color-black);
+  padding: 0 8px;
+}
+
+.list__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 10%;
+  padding: 0 2rem;
+}
+
+.list__minusIcon {
+  color: var(--color-error);
+  cursor: pointer;
+}
+
+.list__addDay {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.list__plusIcon {
+  color: var(--color-success);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.addItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding-right: 1rem;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.addItem__icon {
+  font-size: 1.6rem;
+}
+
+/* ========== TABLET MEDIA QUERIES ========== */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 85%;
+  }
+  .list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+  }
+  .list-pair {
+    display: flex;
+    width: 100%;
+  }
+  .list-field {
+    display: flex;
+    flex-direction: column;
+    padding-right: 16px;
+    box-sizing: border-box;
+    width: 50%;
+  }
+  .list-label {
+    font-weight: bold;
+  }
+  .list-title {
+    font-size: 16px;
+  }
+  .list-button {
+    display: flex;
+    align-self: flex-end;
+  }
+}
+
+/* ========== MOBILE MEDIA QUERIES ========== */
+
+@media (max-width: 480px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 85%;
+  }
+  .list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+  .list-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .list-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .list-label {
+    font-weight: bold;
+  }
+  .list-title {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+  }
+  .list-button {
+    display: flex;
+    align-self: flex-end;
+  }
+}

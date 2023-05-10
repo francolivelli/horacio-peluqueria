@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.graphic {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.arm {
+  width: 42%;
+  height: 0.125rem;
+  background-color: var(--color-grey4);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-white);
+  background-color: var(--color-grey4);
+}
+
+.text{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-grey4);
+  text-align: center;
+}
+
+.activeArm {
+  width: 42%;
+  height: 0.125rem;
+  background-color: var(--color-primary);
+}
+
+.activeMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.activeText{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.successArm{
+  width: 42%;
+  height: 0.125rem;
+  background-color: var(--color-success);
+}
+
+.successMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--color-success);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.successText{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-success);
+  text-align: center;
+}
